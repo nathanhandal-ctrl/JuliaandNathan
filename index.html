@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Julia & Nathan — May 23, 2026 • Camarillo</title>
+  <meta name="description" content="Julia & Nathan | May 23, 2026 in Camarillo. Details, RSVP, photos, Q&A, registry."/>
+  <!-- Fonts: Script for names, Copperplate Gothic (system/fallbacks) for body -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="assets/favicon.png">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="#top" aria-label="Home">J&N</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">☰</button>
+    <ul id="navMenu">
+      <li><a href="#story">Our Story</a></li>
+      <li><a href="#details">Schedule</a></li>
+      <li><a href="#venue">Venue</a></li>
+      <li><a href="#photos">Photos</a></li>
+      <li><a href="#qa">Q&amp;A</a></li>
+      <li><a href="#registry">Registry</a></li>
+      <li><a href="#rsvp" class="btn">RSVP</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="floral top-left" aria-hidden="true"></div>
+    <div class="floral bottom-right" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <p class="eyebrow">We’re getting married</p>
+      <h1 class="names"><span class="ampersand">Julia</span> <span class="amp">&amp;</span> <span class="ampersand">Nathan</span></h1>
+      <p class="sub">May 23, 2026 • Camarillo, California</p>
+      <a href="#rsvp" class="btn btn-primary">RSVP</a>
+    </div>
+  </section>
+
+  <section id="story" class="section">
+    <div class="container">
+      <h2>Our Story</h2>
+      <p class="lede">A chance hello became a forever yes. We’re so excited to celebrate our day with you in Camarillo.</p>
+      <div class="grid two">
+        <figure class="card">
+          <img id="storyPhoto1" src="assets/photo1.jpg" alt="First adventure">
+          <figcaption contenteditable="true" data-edit-key="story.caption1">First adventure by the coast</figcaption>
+        </figure>
+        <figure class="card">
+          <img id="storyPhoto2" src="assets/photo2.jpg" alt="Coffee date">
+          <figcaption contenteditable="true" data-edit-key="story.caption2">Coffee and late‑night talks</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="details" class="section alt">
+    <div class="container">
+      <h2>Schedule</h2>
+      <div class="timeline" id="timeline">
+        <div class="timecard">
+          <h3>Ceremony</h3>
+          <p contenteditable="true" data-edit-key="schedule.ceremony">3:00 PM — The Garden Lawn</p>
+        </div>
+        <div class="timecard">
+          <h3>Cocktail Hour</h3>
+          <p contenteditable="true" data-edit-key="schedule.cocktails">4:00 PM — Rose Terrace</p>
+        </div>
+        <div class="timecard">
+          <h3>Reception</h3>
+          <p contenteditable="true" data-edit-key="schedule.reception">5:30 PM — Grand Hall</p>
+        </div>
+      </div>
+      <p class="note" contenteditable="true" data-edit-key="schedule.note">Dress code: Garden formal. Outdoor ceremony—please plan for sunshine.</p>
+    </div>
+  </section>
+
+  <section id="venue" class="section">
+    <div class="container">
+      <h2>Venue &amp; Travel</h2>
+      <div class="grid two">
+        <div>
+          <p><strong contenteditable="true" data-edit-key="venue.name">Camarillo Arboretum</strong><br/>
+          <span contenteditable="true" data-edit-key="venue.addr">123 Palm Way, Camarillo, CA</span></p>
+          <ul class="checks">
+            <li contenteditable="true" data-edit-key="venue.parking">Parking on-site (validation provided)</li>
+            <li contenteditable="true" data-edit-key="venue.hotel">Hotel block at The Cypress (code: JULIA&amp;NATE)</li>
+            <li contenteditable="true" data-edit-key="venue.shuttle">Shuttle every 30 minutes from 2:00–11:30 PM</li>
+          </ul>
+        </div>
+        <div class="map-embed">
+          <iframe title="Venue Map" id="mapFrame"
+           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.882!2d-119.0376!3d34.2164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sCamarillo!5e0!3m2!1sen!2sus!4v0000000000"
+           loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <small class="tiny">Replace the map embed by pasting any Google Maps iframe in Edit Mode.</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="photos" class="section highlight">
+    <div class="container">
+      <h2>Photos</h2>
+      <p class="note">Add your own images below (saved privately in your browser). Export to move to another device.</p>
+      <div id="photoGrid" class="grid three"></div>
+    </div>
+  </section>
+
+  <section id="qa" class="section alt">
+    <div class="container narrow">
+      <h2>Q&amp;A</h2>
+      <div id="qaList" class="qa-list"></div>
+    </div>
+  </section>
+
+  <section id="registry" class="section">
+    <div class="container narrow">
+      <h2>Registry</h2>
+      <ul id="registryList" class="registry"></ul>
+    </div>
+  </section>
+
+  <section id="rsvp" class="section">
+    <div class="container narrow">
+      <h2>RSVP</h2>
+      <p>We’d love to celebrate with you. Please RSVP by May 1.</p>
+      <a class="btn btn-primary btn-wide" id="rsvpBtn" href="https://forms.gle/" target="_blank" rel="noopener">Open RSVP Form</a>
+      <p class="tiny">Create a free Google Form, paste the link in Edit Mode.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> Julia &amp; Nathan</p>
+    <p class="tiny">Built with love. Customize via the paintbrush in the corner. Changes save to your browser.</p>
+  </div>
+</footer>
+
+<!-- Edit Mode Panel -->
+<button class="fab" id="editToggle" aria-label="Toggle edit panel" title="Customize">🎨</button>
+<aside id="editPanel" class="panel">
+  <header class="panel-head">
+    <h3>Customize</h3>
+    <button class="close" aria-label="Close" onclick="togglePanel()">✕</button>
+  </header>
+  <div class="panel-body">
+    <h4>Brand</h4>
+    <label>Accent Color <input type="color" id="colorBrand" value="#e8b7c3"></label>
+    <label>Cream Color <input type="color" id="colorCream" value="#fff6e9"></label>
+    <label>Sage Background <input type="color" id="colorBg" value="#a7b9a6"></label>
+
+    <h4>RSVP</h4>
+    <label>Google Form URL <input type="url" id="rsvpUrl" placeholder="https://forms.gle/..."></label>
+
+    <h4>Map</h4>
+    <textarea id="mapEmbed" rows="3" placeholder="Paste Google Maps <iframe> embed here"></textarea>
+
+    <h4>Photos</h4>
+    <input type="file" id="photoInput" accept="image/*" multiple>
+    <button class="mini" onclick="clearPhotos()">Clear Photos</button>
+
+    <h4>Q&amp;A</h4>
+    <input id="qText" placeholder="Question"/>
+    <input id="aText" placeholder="Answer"/>
+    <button class="mini" onclick="addQA()">Add</button>
+    <button class="mini" onclick="clearQA()">Clear Q&amp;A</button>
+
+    <h4>Registry</h4>
+    <input id="regLabel" placeholder="Store or Gift Name"/>
+    <input id="regUrl" placeholder="https://"/>
+    <button class="mini" onclick="addRegistry()">Add</button>
+    <button class="mini" onclick="clearRegistry()">Clear Registry</button>
+
+    <h4>Export / Import</h4>
+    <button class="mini" onclick="exportData()">Export JSON</button>
+    <input type="file" id="importFile" accept="application/json">
+  </div>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>
